@@ -1,31 +1,20 @@
 #include <iostream>
-#include <cmath>
 using namespace std;
 
-// Hàm tính lũy thừa a^n
-int luythua(int a, int n) {
-    int ketqua = 1;
-    for (int i = 0; i < n; ++i) {
-        ketqua *= a; 
-    }
-    return ketqua;
-
-} 
-
 int main() {
-    int a, n;
+    unsigned int a, n;
+    unsigned int S = 1;
     cout << "Nhập giá trị a:";
     cin >> a;
+    cout << endl;
     cout << "Nhập giá trị n:";
     cin >> n;
+    cout << endl;
+
+for (int index = 0; index < n; index++)
+{   S = a*S;    
 }
 
-// Kiểm tra nếu n âm
-If ( n < 0 ) {
-    cout << " Không tính được " << endl;
-} else {
-int ketqua = luythua(a , n);
-cout << "Kết quả của" << a << "^" << n << " là: " << ketqua << endl;
-}
-
+cout << "Giá trị lũy thừa: " << S << endl;
 return 0;
+}
